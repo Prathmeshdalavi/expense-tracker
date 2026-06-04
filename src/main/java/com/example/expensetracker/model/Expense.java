@@ -1,4 +1,4 @@
-package com.example.expensetracker;
+package com.example.expensetracker.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

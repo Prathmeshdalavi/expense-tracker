@@ -12,7 +12,6 @@ public class ExpensetrackerApplication {
 		SpringApplication.run(ExpensetrackerApplication.class, args);
 	}
 
-	// ✅ Auto-opens browser using Windows command
 	@EventListener(ApplicationReadyEvent.class)
 	public void openBrowser() {
 		try {

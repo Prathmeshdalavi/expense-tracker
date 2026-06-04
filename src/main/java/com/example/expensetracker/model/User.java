@@ -1,4 +1,4 @@
-package com.example.expensetracker;
+package com.example.expensetracker.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

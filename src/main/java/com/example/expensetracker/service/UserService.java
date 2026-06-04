@@ -1,7 +1,10 @@
-package com.example.expensetracker;
+package com.example.expensetracker.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.example.expensetracker.model.User;
+import com.example.expensetracker.repository.UserRepository;
 
 @Service
 public class UserService {

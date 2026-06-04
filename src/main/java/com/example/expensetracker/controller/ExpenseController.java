@@ -1,4 +1,4 @@
-package com.example.expensetracker;
+package com.example.expensetracker.controller;
 
 import java.util.List;
 
@@ -7,6 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import com.example.expensetracker.model.Expense;
+import com.example.expensetracker.model.User;
+import com.example.expensetracker.service.ExpenseService;
+import com.example.expensetracker.service.UserService;
 
 import jakarta.servlet.http.HttpSession;
 
