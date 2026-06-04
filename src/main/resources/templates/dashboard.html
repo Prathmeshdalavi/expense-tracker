@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+    <style>
+        body { font-family: Arial; background:#f4f4f4; }
+        .card {
+            background:#fff;
+            width:80%;
+            margin:50px auto;
+            padding:30px;
+            border-radius:10px;
+            text-align:center;
+        }
+        .nav a {
+            margin:0 15px;
+            color:green;
+            font-weight:bold;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>Welcome to Expense Tracker</h1>
+
+    <div class="nav">
+        <a th:href="@{/add}">Add Expense</a>
+        <a th:href="@{/expenses}">Expense List</a>
+    </div>
+
+    <p>
+        Track and manage your expenses effectively.
+        Use the navigation links to add new expenses or view your expense history.
+    </p>
+</div>
+</body>
+</html>

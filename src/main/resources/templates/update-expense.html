@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Update Expense</title>
+    <style>
+        body { font-family: Arial; background:#f4f4f4; }
+        .card {
+            background:#fff;
+            width:80%;
+            margin:40px auto;
+            padding:30px;
+            border-radius:10px;
+        }
+        input, textarea, button {
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+        button {
+            background:#4CAF50;
+            color:white;
+            border:none;
+            font-size:16px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2>Update Expense</h2>
+
+    <form th:action="@{/update}" method="post" th:object="${expense}">
+        <input type="hidden" th:field="*{id}" />
+
+        <label>Expense Name:</label>
+        <input type="text" th:field="*{title}" />
+
+        <label>Amount:</label>
+        <input type="number" step="0.01" th:field="*{amount}" />
+
+        <label>Date:</label>
+        <input type="date" th:field="*{date}" />
+
+        <label>Description:</label>
+        <textarea th:field="*{description}"></textarea>
+
+        <button type="submit">Update Expense</button>
+    </form>
+</div>
+</body>
+</html>
